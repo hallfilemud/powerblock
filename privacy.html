@@ -1,102 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>PowerBlock Privacy Policy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; max-width: 800px; }
-    h1, h2, h3 { color: #333; }
-    ul { margin-left: 20px; }
-    p { margin-bottom: 1em; }
-    .last-updated { font-size: 0.9em; color: #666; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PowerBlock — Privacy Policy</title>
+<style>
+  :root { --text: #1a1240; --muted: #5b5678; --bg: #ffffff; --accent: #7128F5; --line: #e7e3f6; }
+  @media (prefers-color-scheme: dark) { :root { --text: #ece9ff; --muted: #a9a4c6; --bg: #110d24; --accent: #a07bff; --line: #2b2550; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 36px; }
+  .brand svg { width: 46px; height: 38px; }
+  .brand b { font-size: 22px; letter-spacing: -.01em; }
+  .brand b span { color: var(--accent); }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0 0 6px; }
+  .date { color: var(--muted); margin: 0 0 32px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; }
+  p, li { color: var(--text); }
+  .lead { font-size: 19px; padding: 18px 20px; border-left: 4px solid var(--accent); background: color-mix(in srgb, var(--accent) 7%, transparent); border-radius: 0 10px 10px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 15.5px; margin-top: 8px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); }
+</style>
 </head>
 <body>
-  <h1>PowerBlock Privacy Policy</h1>
-  <p class="last-updated"><strong>Last Updated:</strong> August 20, 2025</p>
+<main>
+  <div class="brand">
+    <svg viewBox="92 214 286 232" aria-hidden="true"><g fill="#230E77"><rect x="100" y="245" width="135" height="30" rx="15"/><rect x="100" y="303" width="105" height="30" rx="15"/><rect x="100" y="360" width="78" height="30" rx="15"/></g><g fill="#BAABEE"><rect x="298" y="272" width="72" height="30" rx="15"/><rect x="270" y="329" width="86" height="30" rx="15"/><rect x="242" y="387" width="110" height="30" rx="15"/></g><line x1="289" y1="233" x2="189" y2="427" stroke="#7128F5" stroke-width="23" stroke-linecap="round"/></svg>
+    <b>Power<span>Block</span></b>
+  </div>
 
-  <h2>Introduction</h2>
-  <p>PowerBlock is an open-source ad blocker browser extension designed to enhance your browsing experience by blocking advertisements, tracking scripts, and malicious overlays. This privacy policy explains our practices regarding data collection, use, and protection.</p>
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective October 22, 2026</p>
 
-  <h2>Data Collection</h2>
-  <p>PowerBlock is designed with privacy as a core principle. We do <strong>not</strong> collect, store, or transmit any personal information to external servers or third parties. All data processed by PowerBlock remains on your device.</p>
+  <p class="lead">PowerBlock does not collect, sell, share or transmit your personal data or browsing data. Everything it does
+    happens inside your browser, on your device.</p>
 
-  <h3>Data We Do Not Collect</h3>
+  <h2>Who we are</h2>
+  <p>PowerBlock ("the extension") is a browser extension that blocks ads, trackers, pop-ups and other unwanted page
+    content. This policy explains what information the extension handles and how.</p>
+
+  <h2>Information handled on your device</h2>
+  <p>To block ads, the extension has to look at the pages you visit. That processing happens locally and the results stay
+    in your browser's extension storage:</p>
+  <table>
+    <tr><th>What</th><th>Why</th><th>Where it goes</th></tr>
+    <tr><td>Page addresses and page content</td><td>To apply blocking and hiding rules for the site you're on</td><td>Nowhere. Processed in memory only.</td></tr>
+    <tr><td>Clicks and key presses (timing only)</td><td>To tell your real clicks apart from pop-ups and hijacked links</td><td>Nowhere. Not logged or stored.</td></tr>
+    <tr><td>Settings, allowlisted sites, your custom filters, elements you blocked</td><td>To remember your choices</td><td>Stored locally in your browser</td></tr>
+    <tr><td>Blocking statistics (counts per category and per day)</td><td>To show the dashboard and badge counts</td><td>Stored locally. No URLs are recorded.</td></tr>
+  </table>
+
+  <h2>What we don't do</h2>
   <ul>
-    <li>Personal identification information (name, email, address, etc.)</li>
-    <li>Browsing history or visited URLs</li>
-    <li>Search queries or form data</li>
-    <li>Device identifiers or IP addresses</li>
-    <li>Cookies or tracking identifiers</li>
-    <li>Any personally identifiable information</li>
+    <li>No analytics, telemetry, crash reporting or tracking of any kind.</li>
+    <li>No accounts, and no servers operated by us.</li>
+    <li>No selling or sharing of data with anyone, and no advertising.</li>
+    <li>No remote code. All scripts and filter lists ship inside the extension.</li>
   </ul>
+  <p>The extension makes no network requests of its own. Its blocking rules are compiled from public filter lists
+    (EasyList, EasyPrivacy, Fanboy's lists, uBlock Origin filters and Peter Lowe's list) at build time and bundled with each release.</p>
 
-  <h3>Local Data Storage</h3>
-  <p>PowerBlock stores the following information locally on your device using the browser’s storage API:</p>
-  <ul>
-    <li><strong>User Preferences</strong>: ad blocking settings, feature toggles (overlay removal, click hijacking prevention), security settings (clickjacking protection, hidden overlay detection), sensitivity levels for security features</li>
-    <li><strong>Whitelisted Domains</strong>: list of websites where ad blocking is disabled</li>
-    <li><strong>Temporary Counters</strong>: number of ads blocked per tab (reset when tab is closed), security event logs (limited to 50 recent events, automatically rotated)</li>
-  </ul>
-  <p>All stored data is used solely for the extension’s functionality and is never transmitted outside your device.</p>
+  <h2>Your control</h2>
+  <p>You can view, export or delete your settings and statistics at any time from the PowerBlock dashboard
+    (<em>Backup &amp; reset</em>). Uninstalling the extension removes all of its stored data from your browser.</p>
 
-  <h2>Data Usage</h2>
-  <p>All data processed by PowerBlock is used exclusively for:</p>
-  <ul>
-    <li>Blocking advertisements and tracking scripts as requested by the user</li>
-    <li>Maintaining user preferences across browser sessions</li>
-    <li>Providing statistics on blocked content</li>
-    <li>Detecting and preventing malicious overlays and clickjacking attempts</li>
-  </ul>
+  <h2>Chrome Web Store Limited Use</h2>
+  <p>The use of information received from browser APIs adheres to the Chrome Web Store User Data Policy, including the
+    Limited Use requirements.</p>
 
-  <h2>Security Features Data</h2>
-  <p>Our advanced security features collect minimal diagnostic information locally:</p>
-  <ul>
-    <li><strong>Clickjacking Protection</strong>: logs when frame‑busting techniques are activated</li>
-    <li><strong>Hidden Overlay Detection</strong>: records basic information about blocked overlays (element type, position)</li>
-    <li><strong>Security Event Logs</strong>: maintains a rotating log of security events (maximum 50 entries)</li>
-  </ul>
-  <p>All security data is stored locally and never transmitted.</p>
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be posted at this address with a new effective date. Any change to how
+    data is handled will also be announced in the extension's release notes before it takes effect.</p>
 
-  <h2>Third-Party Services</h2>
-  <p>PowerBlock does not integrate with or rely on any third-party analytics, advertising, or tracking services. We do not share any data with external entities.</p>
-
-  <h2>Filter Lists</h2>
-  <p>PowerBlock uses publicly available filter lists (e.g., EasyList, uBlock Origin filters) for ad blocking. These lists are:</p>
-  <ul>
-    <li>Downloaded and processed locally</li>
-    <li>Not modified or transmitted</li>
-    <li>Used solely for determining which requests to block</li>
-  </ul>
-
-  <h2>Data Sharing</h2>
-  <p>We do not share, sell, rent, or trade any data with third parties. No information is transmitted from your device when using PowerBlock.</p>
-
-  <h2>Data Retention</h2>
-  <p>All data is stored locally and persists only as long as:</p>
-  <ul>
-    <li>The extension is installed</li>
-    <li>Browser data is not cleared</li>
-    <li>User does not manually reset settings</li>
-  </ul>
-  <p>Security logs are automatically rotated to maintain only the 50 most recent events.</p>
-
-  <h2>Your Rights</h2>
-  <p>As no personal data is collected, there are no special procedures needed for data access, correction, or deletion. To remove all locally stored data:</p>
-  <ol>
-    <li>Uninstall the extension</li>
-    <li>Clear browser data for the extension</li>
-    <li>Manually reset settings through the popup interface</li>
-  </ol>
-
-  <h2>Changes to This Policy</h2>
-  <p>We may update this privacy policy to reflect changes in our practices or for legal compliance. Significant changes will be communicated through extension updates.</p>
-
-  <h2>Contact Information</h2>
-  <p>For questions about this privacy policy, please open an issue on our GitHub repository or contact the development team through the extension’s support channels.</p>
-
-  <h2>Open Source</h2>
-  <p>PowerBlock is open-source software. You can review our code at any time to verify our privacy practices.</p>
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:contact@thismonster.com">@Thismonster.com</a></p>
+</main>
 </body>
 </html>
